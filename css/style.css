@@ -1,0 +1,788 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(238, 236, 227);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
+}
+/*!heder*/
+.activador{
+    color: white;
+}
+.menuHamburguesa{
+    display: none;
+}
+header{
+    background-color: rgb(236, 194, 126);
+}
+header h1{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 10px;
+}
+header .logo{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+header .logoIconos{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.iconoUsuario{
+    position: relative;
+}
+.iconoCarrito{
+    position: relative;
+}
+header img{
+    width: 25px;
+}
+header .logoIconos input{
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+header .buscador{
+    position: relative;
+}
+header .logoIconos button{
+    font-size: 25px;
+    width: 33px;
+    padding: 2px;
+    position: absolute;
+    border: 0;
+    right: 5px;
+    top: 1px;
+    background-color: rgba(255, 255, 255, 0);
+}
+header ul.navbar-nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(235, 172, 70);
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0;
+}
+nav .navbar-nav a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar-toggler{
+    margin: 5px;
+}
+/*!Index*/
+section .portada{
+    background-image: url('../img/fondo10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    align-items:center;
+}
+section .portada h2{
+    font-size: 50px;
+    background-color: rgba(7, 7, 7, 0.548);
+    color: rgb(243, 205, 116);
+    padding: 10px;
+    border-radius: 10px;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-name: TituloPortada;
+    margin: 100px;
+}
+@keyframes TituloPortada {
+    0%{
+        margin-top: -500px;
+    }
+    85%{
+        margin: 100px;
+        
+        scale: 1.01;
+    }
+    90%{
+        margin: 90px;
+    }
+    100%{
+        margin: 100px;
+    }
+}
+section .portada a{
+    background-color: rgba(236, 194, 126);
+    padding: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: black;
+    transition:ease 300ms;
+    box-shadow: .5px .5px 10px;
+}
+section .portada a:hover{
+    background-color: rgb(243, 166, 43);
+    color: white;
+}
+section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+section .instucciones{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+section .instucciones img{
+    width: 400px;
+}
+section .instruccionesImg{
+    position: relative;
+}
+section .instruccionesImg a{
+    background-color: rgba(236, 194, 126);
+    padding: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: black;
+    transition:ease 300ms;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    box-shadow: .5px .5px 10px;
+}
+section .instruccionesImg a:hover{
+    background-color: rgb(243, 166, 43);
+    color: white;
+    box-shadow: 2px 2px 10px;
+}
+section .instruccionesTexto{
+    width: 600px;
+    font-size: 25px;
+    color: rgb(105, 79, 37);
+}
+section .porqueElegirnos{
+    width: 95%;
+    height: 200px;
+    background-color: rgba(236, 194, 126);
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+section .porqueElegirnosImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .porqueElegirnosImg img:hover{
+    scale: 1.01;
+}
+
+section .porqueElegirnosText ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .porqueElegirnosImg img{
+    width: 150px;
+    margin-right: 20px;
+}
+section .porqueElegirnosText li{
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+/*!footer*/
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(235, 172, 70);
+    font-size: 30px;
+}
+footer .footerEnlaces{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+footer .footerEnlaces a{
+    text-decoration: none;
+    color: rgb(105, 79, 37);
+    
+}
+footer .footerRedes ul{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    justify-content: space-between;
+}
+footer .footerRedes img{
+    width: 35px;
+}
+
+/*!proyectos*/
+.h2Proyectos{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+section.proyectos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+section .proyecto{
+    border: 1px solid ;
+    text-align: center;
+    width: 500px;
+    margin: 60px;
+    box-shadow: .5px .5px 5px;
+}
+section .proyecto .imagen{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+section .proyecto .imagen a{
+    position:absolute;
+    bottom: 0px;
+    
+    background-color: rgba(236, 194, 126);
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: black;
+    transition:ease 300ms;
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    box-shadow: .5px .5px 10px;
+}
+section .proyecto .imagen a:hover{
+    background-color: rgb(243, 166, 43);
+    color: white;
+    box-shadow: 2px 2px 10px;
+}
+section .proyecto img{
+    
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+}
+
+/*!contacto*/
+.contacto h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(165, 102, 0);
+}
+.contacto span{
+    color: black;
+}
+section.datosContacto{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+}
+
+.datosContacto h2{
+    margin-bottom: 50px;
+}
+.formDatos{
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+section form .datos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 30px;
+}
+section form .datos input{
+    font-size: 25px;
+    width: 300px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.096);
+    border-bottom: black 1px solid;
+}
+section form textarea{
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.205);
+    border-bottom: black 1px solid;
+    padding: 10px;
+}
+.botonContacto{
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    background-color: rgba(236, 194, 126);
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    transition:ease 300ms;
+}
+.botonContacto:hover{
+    background-color: rgb(243, 166, 43);
+    color: white;
+    box-shadow: 2px 2px 10px;
+}
+section iframe{
+    width: 100%;
+    height: 500px;
+}
+section .redes ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+section .redes img{
+    width: 35px;
+}
+/*!galeria*/
+main h1{
+    text-align: center;
+    margin: 0 10px;
+}
+.galeria img{
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+}
+.galeria{
+    width: 100%;
+    overflow:hidden;
+    display: grid;
+    gap: 10px;
+    
+    /**para que las filas que se generen sean del mismo tamaño*/
+    grid-auto-rows: 200px;
+    /**filas*/
+    grid-template-rows: 400px 400px 400px 400px;
+    /**columna*/
+    grid-template-columns: 30% 30% 40%;
+    /**separar columnas
+    gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;*/
+    /**grid template areas*/
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img4 img3"
+    "img5 img6 img6"
+    "img7 img8 img9"
+    ;
+}
+.img1{
+    grid-area: img1;
+    width: 100%;
+}
+.img2{
+    grid-area: img2;
+    width: 100%;
+}
+.img3{
+    grid-area: img3;
+    width: 100%;
+}
+.img4{
+    grid-area: img4;
+    width: 100%;
+}
+.img5{
+    grid-area: img5;
+    width: 100%;
+}
+.img6{
+    grid-area: img6;
+    width: 100%;
+}
+.img7{
+    grid-area: img7;
+    width: 100%;
+}
+.img8{
+    grid-area: img8;
+    width: 100%;
+}
+.img9{
+    grid-area: img9;
+    width: 100%;
+}
+.ejemplo1{
+    grid-area: nombre1;
+}
+.ejemplo{
+    /**le indicamos el comienzo de la linea*/
+    grid-column-start: 1;
+    /**le indicamos el final de la linea*/
+    grid-column-end: 3;
+    /** para mas corto*/
+    grid-column: 1 / 3 ;
+
+}
+/*!equipo*/
+.equipo{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+}
+.equipo img{
+    width: 100%;
+}.equipo .informacionNosotros{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    padding: 80px 80px;
+    transition: all .5s ease-in-out ;
+    background-color: rgba(243, 219, 170, 0.596);
+    font-size: 30px;
+    overflow: inherit;
+}
+.equipo .informacionNosotros:hover{
+    opacity: 100;
+}/*? *************  responsive  */
+@media (max-width: 1300px) {
+    /*!index responsivo 1300px*/
+    header .logo{
+        margin-right: 50px;
+   
+    }
+    header .logoIconos{
+        width: 40%;
+    }
+    /**section*/
+    section .instucciones{
+        width: 95%;
+    }
+    section .instucciones img{
+        width: 350px;
+    }
+    section .instruccionesImg a{
+        left: 130px;
+    }
+    section .instruccionesTexto{
+        width: 600px;
+    }
+    section .porqueElegirnos{
+        height: 200px;
+        padding: 8px;
+
+    }
+    section .porqueElegirnosImg img{
+        width: 120px;
+        margin-right: 20px;
+    }
+    section .porqueElegirnosText li{
+        list-style: none;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 100px;
+    }
+    /**footer*/
+footer{
+    font-size: 20px;
+}
+
+    
+}
+@media (max-width: 1250px) {
+/*!index responsivo 855px*/
+
+
+/*!contacto responsivo 1250px*/
+    .contacto h3{
+        font-size: 25px;
+    }
+    .contacto span{
+        color: black;
+    }
+    section.datosContacto{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    section form .datos {
+        width: 100%;
+    }
+    section form .datos input{
+        width: 100%;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.096);
+        border-bottom: black 1px solid;
+    }
+    section form textarea{
+        font-size: 20px;
+        width: 70%;
+    }
+    section .redes ul{
+        width: 40%;
+    }
+    
+}
+@media (max-width: 1060px) {
+    header .logoIconos{
+        width: 50%;
+    }
+    /**section*/
+    section .instucciones{
+        width: 80%;
+    }
+    section .instucciones img{
+        width: 300px;
+    }
+    section .instruccionesImg a{
+        left: 130px;
+    }
+    section .instruccionesTexto{
+        width: 400px;
+    }
+    
+}
+@media (max-width: 855px) {
+/*!index responsivo 855px*/
+    header .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 0px;
+        align-items: center;
+    }
+    header .logoIconos{
+        width: 70%;
+        justify-content: center;
+    }
+    .iconoUsuario{
+        position: absolute;
+        left: 20px;
+    }
+    .iconoCarrito{
+        position: absolute;
+        right: 20px;
+    }
+    header ul{
+        flex-direction: column;
+        justify-content:initial;
+        align-items: initial;
+        height: 30px;
+        overflow: hidden;
+        padding: 10px 0 0 20px;
+        transition:ease .5s;
+    }
+    
+/**section*/
+
+section .instucciones{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cambiarInstruccion{
+    order: 1;
+}
+section .instucciones img{
+    width: 300px;
+}
+
+section .instruccionesImg a{
+    background-color: rgba(236, 194, 126);
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    bottom: -50px;
+    left: 40%;
+    
+}
+section .instruccionesTexto{
+    width: 95%;
+    font-size: 20px;
+}
+section .porqueElegirnos{
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+}
+section .porqueElegirnosImg img{
+    width: 150px;
+    margin-right: 20px;
+}
+section .porqueElegirnosImg img{
+    width: 120px;
+    margin-right: 0px;
+}
+section .porqueElegirnosText li{
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    width: 200px;
+}
+/**footer*/
+footer{
+    font-size: 20px;
+    padding-left: 30px;
+    height: 300px;
+}
+footer .footerRedes ul{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}
+footer .footerRedes img{
+    width: 30px;
+}
+/*!contacto responsivo 855px*/
+
+.formDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+section form .datos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+section form .datos input{
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.096);
+    border-bottom: black 1px solid;
+}
+section form textarea{
+    width: 95%;
+    margin: auto;
+}
+.botonContacto{
+    position: absolute;
+    bottom: -70px;
+    right: 33%;
+    width: 33%;
+}
+/*!Galeria responsivo 855px*/
+.galeria{
+    width: 100%;
+    overflow:hidden;
+    display: grid;
+    gap: 10px;
+    
+    /**para que las filas que se generen sean del mismo tamaño*/
+    grid-auto-rows: 200px;
+    /**filas*/
+    grid-template-rows: 400px ;
+    /**columna*/
+    grid-template-columns: 50% 50%;
+    /**separar columnas
+    gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;*/
+    /**grid template areas*/
+    grid-template-areas: 
+    "img1 img2"
+    "img4 img3"
+    "img5 img6"
+    "img7 img8"
+    "img3 img6"
+    "img9 img6"
+    ;
+}
+
+}
+@media (max-width: 550px) {
+    section .portada a{
+        padding: 10px;
+        font-size: 20px;
+    }
+    header img{
+        width: 20px;
+    }
+    header .logoIconos input{
+        font-size: 25px;
+    }
+    section .portada h2{
+        font-size: 30px;
+    }
+/*!Proyecto responsivo 550px*/
+section .proyecto{
+    border: 1px solid ;
+    text-align: center;
+    width: 95%;
+    margin: 60px;
+    box-shadow: .5px .5px 5px;
+}
+section .proyecto .imagen a{
+    padding: 10px;
+}
+section .proyecto .imagen a{
+    position:absolute;
+    bottom: 0px;
+    background-color: rgba(236, 194, 126);
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: black;
+    transition:ease 300ms;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    width: 33%;
+    box-shadow: .5px .5px 10px;
+}
+/*!Contacto responsivo 550px*/
+section .redes ul{
+    width: 80%;
+}
+}
+
