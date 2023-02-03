@@ -597,10 +597,12 @@ footer{
     .iconoUsuario{
         position: absolute;
         left: 20px;
+        top: 20px;
     }
     .iconoCarrito{
         position: absolute;
         right: 20px;
+        top: 20px;
     }
     header ul{
         flex-direction: column;
@@ -671,8 +673,12 @@ footer{
 footer .footerRedes ul{
     display: flex;
     margin: auto;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
+    margin-right: 10px;
+}
+ul {
+    padding-left: 0;
 }
 footer .footerRedes img{
     width: 30px;
