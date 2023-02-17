@@ -1,0 +1,366 @@
+//*INDEX
+main{
+    section{
+        .portada{
+            background-image: url('../img/fondo10.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 80vh;
+            @include flex(flex, space-between, center);
+            flex-direction:column;
+            h2{
+                font-size: 50px;
+                background-color: rgba(7, 7, 7, 0.548);
+                color: nth($colores_naranja, 1);
+                padding: 10px;
+                border-radius: 10px;
+                animation-duration: .5s;
+                animation-timing-function: ease-in-out;
+                animation-name: TituloPortada;
+                margin: 100px;
+            }
+            a{
+                @extend %botones;
+                margin-bottom: 40px;
+
+                &:hover{
+                    @extend %hover-botones;
+                }
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        .instucciones{
+            margin: auto;
+            width: 80%;
+            @include flex(flex, space-between, center);
+            .instruccionesTexto{
+                width: 600px;
+                font-size: 25px;
+                color: nth($colores_naranja, 4);
+                h3{
+
+                }
+                p{
+
+                }
+            }
+            .instruccionesImg{
+                position: relative;
+                img{
+                    width: 400px;
+                }
+                a{
+                    @extend %botones;
+                    margin-bottom: 40px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 150px;
+
+                    &:hover{
+                        @extend %hover-botones;
+                    }
+                }
+            }
+            .cambiarInstruccion{
+
+            }
+        }
+        .porqueElegirnos{
+            width: 95%;
+            height: 200px;
+            background-color: nth($colores_naranja, 1);
+            margin: auto;
+            padding: 10px;
+            flex-direction: column;
+            @include flex(flex, space-between, normal);
+            
+            .porqueElegirnosImg{
+                @include flex(flex, space-between, center);
+    
+                img{
+                    width: 150px;
+                    margin-right: 20px;
+                    transition: $transiciones;
+
+                    &:hover{
+                        scale: 1.01;
+                    }
+                }
+            }
+            .porqueElegirnosText{
+
+                ul{
+                    @include flex(flex, space-between, center);
+                    
+                    li{
+                        list-style: none;
+                        margin-bottom: 20px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+//*PROYECTOS
+main{
+    h2.h2Proyectos{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .proyectos{
+        @include flex(flex, center, center);
+        flex-wrap: wrap;
+        .proyecto{
+            border: 1px solid ;
+            text-align: center;
+            width: 40%;
+            margin: 60px;
+            box-shadow: .5px .5px 5px;
+            max-width: 800px;
+            .imagen{
+                height: 400px;
+                overflow: hidden;
+                position: relative;
+                img{
+                    background-position: center;
+                    background-size: cover;
+                    width: 120%;
+                    max-width: 800px;
+                }
+                a{
+                    position:absolute;
+                    bottom: 0px;
+                    margin-bottom: 40px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 33.3%;
+                    @extend %botones;
+                    width: 33.3%;
+                    font-size: 20px;
+
+                    &:hover{
+                        @extend %hover-botones;
+
+                    }
+                }
+            }
+        }
+    }
+}
+//*IMAGENES
+main{
+    h1{
+        text-align: center;
+        margin: 0 10px;
+    }
+    .galeria{
+        width: 100%;
+        overflow:hidden;
+        display: grid;
+        gap: 10px;
+        
+        /**para que las filas que se generen sean del mismo tamaño*/
+        grid-auto-rows: 200px;
+        /**filas*/
+        grid-template-rows: 400px 400px 400px 400px;
+        /**columna*/
+        grid-template-columns: 30% 30% 40%;
+        /**separar columnas
+        gap: 10px;
+        column-gap: 10px;
+        row-gap: 10px;*/
+        /**grid template areas*/
+        grid-template-areas: 
+        "img1 img2 img3"
+        "img4 img4 img3"
+        "img5 img6 img6"
+        "img7 img8 img9"
+        ;
+        img{
+            overflow: hidden;
+            object-fit: cover;
+            height: 100%;
+        }
+        .img1{
+            grid-area: img1;
+    width: 100%;
+        }
+        .img2{
+            grid-area: img2;
+    width: 100%;
+        }
+        .img3{
+            grid-area: img3;
+    width: 100%;
+        }
+        .img4{
+            grid-area: img4;
+    width: 100%;
+        }
+        .img5{
+            grid-area: img5;
+    width: 100%;
+        }
+        .img6{
+            grid-area: img6;
+    width: 100%;
+        }
+        .img7{
+            grid-area: img7;
+    width: 100%;
+        }
+        .img8{
+            grid-area: img8;
+    width: 100%;
+        }
+        .img9{
+            grid-area: img9;
+    width: 100%;
+        }
+    }
+}
+//*ACERCA DE NOSOTROS
+main{
+    section{
+        h2{
+
+        }
+        .equipo{
+            width: 80%;
+            margin: auto;
+            overflow:hidden;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .informacionNosotros{
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                height: 100%;
+                padding: 80px 80px;
+                transition: all .5s ease-in-out ;
+                background-color: rgba(243, 219, 170, 0.596);
+                font-size: 30px;
+                overflow: inherit;
+                &:hover{
+                    opacity: 100;
+                }
+                p{
+
+                }
+                h2{
+
+                }
+            }
+        }
+        .imgEquipo{
+            width: 95%;
+            margin: auto;
+            height: 700px;
+            overflow: hidden;
+            object-fit: cover;
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+//*CONTACTO
+main{
+    .datosContacto{
+        @include flex(flex, space-between, center);
+        width: 90%;
+        margin: auto;
+        height: 500px;
+        .contacto{
+            h2{
+                margin-bottom: 50px;
+            }
+            h3{
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: nth($colores_naranja, 4);
+                span{
+                    color: black;
+                }
+            }
+            .redes{
+                ul{
+                    @include flex(flex, space-between, center);
+                    width: 50%;
+                    a{
+                        img{
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+        }
+                .informacion{
+                    h2{
+
+                    }
+                    .formDatos{
+                        @include flex(flex, space-between, normal);
+                        position: relative;
+                        margin-bottom: 100px;
+                        .datos{
+                            @include flex(flex, space-between, center);
+                            flex-direction: column;
+                            align-items: flex-end;
+                            margin: 0 30px;
+                            input{
+                                font-size: 25px;
+                                width: 300px;
+                                border: 0;
+                                background-color: rgba(255, 255, 255, 0.096);
+                                border-bottom: black 1px solid;
+                            }
+                        }
+                        textarea{
+                            font-size: 20px;
+                            background-color: rgba(255, 255, 255, 0.205);
+                            border-bottom: black 1px solid;
+                            padding: 10px;
+                        }
+                        input.botonContacto{
+                            @extend %botones;
+                            position: absolute;
+                            bottom: -85px;
+                            right: 33.3%;
+                            font-size: 20px;
+                            width: 33.3%;
+                            box-shadow: 0px 0px 0px;
+
+                            &:hover{
+                                @extend %hover-botones;
+                            }
+                        }
+                    }
+
+        }
+    }
+    section{
+        iframe{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+

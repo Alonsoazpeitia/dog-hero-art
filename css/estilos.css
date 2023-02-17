@@ -1,0 +1,619 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #eeece3;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 300; }
+
+/****************bootstrap*/
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0; }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0; }
+
+@keyframes TituloPortada {
+  0% {
+    margin-top: -500px; }
+  85% {
+    margin: 100px;
+    scale: 1.01; }
+  90% {
+    margin: 90px; }
+  100% {
+    margin: 100px; } }
+
+main section .portada a, main section .instucciones .instruccionesImg a, main .proyectos .proyecto .imagen a, main .datosContacto .informacion .formDatos input.botonContacto {
+  background-color: #ecc27e;
+  color: black;
+  transition: all 500ms ease-out;
+  box-shadow: .5px .5px 10px;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none; }
+
+main section .portada a:hover, main section .instucciones .instruccionesImg a:hover, main .proyectos .proyecto .imagen a:hover, main .datosContacto .informacion .formDatos input.botonContacto:hover {
+  background-color: #f3a62b;
+  color: white;
+  box-shadow: 2px 2px 10px; }
+
+header {
+  background-color: #ecc27e; }
+  header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; }
+    header .logo h1 {
+      font-size: 50px;
+      font-family: 'Dancing Script', cursive;
+      margin-left: 10px; }
+    header .logo .logoIconos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 35%; }
+      header .logo .logoIconos .buscador {
+        position: relative; }
+        header .logo .logoIconos .buscador input {
+          font-size: 30px;
+          background-color: rgba(255, 255, 255, 0.055);
+          border: 0;
+          border-bottom: 1px solid #000; }
+        header .logo .logoIconos .buscador button {
+          font-size: 25px;
+          width: 33px;
+          padding: 2px;
+          position: absolute;
+          border: 0;
+          right: 5px;
+          top: 1px;
+          background-color: rgba(255, 255, 255, 0); }
+      header .logo .logoIconos .iconoUsuario {
+        position: relative;
+        margin-left: 20px; }
+      header .logo .logoIconos .iconoCarrito {
+        position: relative;
+        margin-left: 20px; }
+      header .logo .logoIconos img {
+        width: 25px; }
+  header nav .container-fluid button {
+    margin: 5px; }
+  header nav .container-fluid div ul.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ebac46;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%; }
+    header nav .container-fluid div ul.navbar-nav li a {
+      text-decoration: none;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: black; }
+
+main section .portada {
+  background-image: url("../img/fondo10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  main section .portada h2 {
+    font-size: 50px;
+    background-color: rgba(7, 7, 7, 0.548);
+    color: #ecc27e;
+    padding: 10px;
+    border-radius: 10px;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-name: TituloPortada;
+    margin: 100px; }
+  main section .portada a {
+    margin-bottom: 40px; }
+
+main section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px; }
+
+main section .instucciones {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  main section .instucciones .instruccionesTexto {
+    width: 600px;
+    font-size: 25px;
+    color: #694f25; }
+  main section .instucciones .instruccionesImg {
+    position: relative; }
+    main section .instucciones .instruccionesImg img {
+      width: 400px; }
+    main section .instucciones .instruccionesImg a {
+      margin-bottom: 40px;
+      position: absolute;
+      bottom: 0;
+      left: 150px; }
+
+main section .porqueElegirnos {
+  width: 95%;
+  height: 200px;
+  background-color: #ecc27e;
+  margin: auto;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal; }
+  main section .porqueElegirnos .porqueElegirnosImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main section .porqueElegirnos .porqueElegirnosImg img {
+      width: 150px;
+      margin-right: 20px;
+      transition: all 500ms ease-out; }
+      main section .porqueElegirnos .porqueElegirnosImg img:hover {
+        scale: 1.01; }
+  main section .porqueElegirnos .porqueElegirnosText ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main section .porqueElegirnos .porqueElegirnosText ul li {
+      list-style: none;
+      margin-bottom: 20px;
+      margin-left: 20px; }
+
+main h2.h2Proyectos {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px; }
+
+main .proyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .proyectos .proyecto {
+    border: 1px solid;
+    text-align: center;
+    width: 40%;
+    margin: 60px;
+    box-shadow: .5px .5px 5px;
+    max-width: 800px; }
+    main .proyectos .proyecto .imagen {
+      height: 400px;
+      overflow: hidden;
+      position: relative; }
+      main .proyectos .proyecto .imagen img {
+        background-position: center;
+        background-size: cover;
+        width: 120%;
+        max-width: 800px; }
+      main .proyectos .proyecto .imagen a {
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 33.3%;
+        width: 33.3%;
+        font-size: 20px; }
+
+main h1 {
+  text-align: center;
+  margin: 0 10px; }
+
+main .galeria {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  gap: 10px;
+  /**para que las filas que se generen sean del mismo tamaño*/
+  grid-auto-rows: 200px;
+  /**filas*/
+  grid-template-rows: 400px 400px 400px 400px;
+  /**columna*/
+  grid-template-columns: 30% 30% 40%;
+  /**separar columnas
+        gap: 10px;
+        column-gap: 10px;
+        row-gap: 10px;*/
+  /**grid template areas*/
+  grid-template-areas: "img1 img2 img3" "img4 img4 img3" "img5 img6 img6" "img7 img8 img9"; }
+  main .galeria img {
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%; }
+  main .galeria .img1 {
+    grid-area: img1;
+    width: 100%; }
+  main .galeria .img2 {
+    grid-area: img2;
+    width: 100%; }
+  main .galeria .img3 {
+    grid-area: img3;
+    width: 100%; }
+  main .galeria .img4 {
+    grid-area: img4;
+    width: 100%; }
+  main .galeria .img5 {
+    grid-area: img5;
+    width: 100%; }
+  main .galeria .img6 {
+    grid-area: img6;
+    width: 100%; }
+  main .galeria .img7 {
+    grid-area: img7;
+    width: 100%; }
+  main .galeria .img8 {
+    grid-area: img8;
+    width: 100%; }
+  main .galeria .img9 {
+    grid-area: img9;
+    width: 100%; }
+
+main section .equipo {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative; }
+  main section .equipo img {
+    width: 100%; }
+  main section .equipo .informacionNosotros {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    padding: 80px 80px;
+    transition: all .5s ease-in-out;
+    background-color: rgba(243, 219, 170, 0.596);
+    font-size: 30px;
+    overflow: inherit; }
+    main section .equipo .informacionNosotros:hover {
+      opacity: 100; }
+
+main section .imgEquipo {
+  width: 95%;
+  margin: auto;
+  height: 700px;
+  overflow: hidden;
+  object-fit: cover; }
+  main section .imgEquipo .carousel .carousel-inner .carousel-item img {
+    object-fit: cover; }
+
+main .datosContacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 500px; }
+  main .datosContacto .contacto h2 {
+    margin-bottom: 50px; }
+  main .datosContacto .contacto h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #694f25; }
+    main .datosContacto .contacto h3 span {
+      color: black; }
+  main .datosContacto .contacto .redes ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%; }
+    main .datosContacto .contacto .redes ul a img {
+      width: 35px; }
+  main .datosContacto .informacion .formDatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    position: relative;
+    margin-bottom: 100px; }
+    main .datosContacto .informacion .formDatos .datos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0 30px; }
+      main .datosContacto .informacion .formDatos .datos input {
+        font-size: 25px;
+        width: 300px;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.096);
+        border-bottom: black 1px solid; }
+    main .datosContacto .informacion .formDatos textarea {
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0.205);
+      border-bottom: black 1px solid;
+      padding: 10px; }
+    main .datosContacto .informacion .formDatos input.botonContacto {
+      position: absolute;
+      bottom: -85px;
+      right: 33.3%;
+      font-size: 20px;
+      width: 33.3%;
+      box-shadow: 0px 0px 0px; }
+
+main section iframe {
+  width: 100%;
+  height: 500px; }
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  background-color: #ebac46;
+  font-size: 30px;
+  padding: 0 5%; }
+  footer .footerEnlaces {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; }
+    footer .footerEnlaces a {
+      text-decoration: none;
+      color: #694f25; }
+  footer .footerRedes ul {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    justify-content: space-between; }
+    footer .footerRedes ul a img {
+      width: 35px; }
+
+@media (max-width: 1300px) {
+  header .logo {
+    margin-right: 50px; }
+    header .logo .logoIconos {
+      width: 40%; }
+  footer {
+    font-size: 20px; }
+  main section .instucciones {
+    width: 95%; }
+    main section .instucciones .instruccionesTexto {
+      width: 600px; }
+    main section .instucciones .instruccionesImg img {
+      width: 350px; }
+    main section .instucciones .instruccionesImg a {
+      left: 130px; }
+  main section .porqueElegirnos {
+    height: 200px;
+    padding: 8px; }
+    main section .porqueElegirnos .porqueElegirnosImg img {
+      width: 120px;
+      margin-right: 20px; }
+    main section .porqueElegirnos .porqueElegirnosText ul li {
+      list-style: none;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      width: 100px; }
+  main section .equipo img {
+    width: 100%; }
+  main section .equipo .informacionNosotros {
+    font-size: 23px; } }
+
+@media (max-width: 1300px) and (max-width: 1250px) {
+  main .datosContacto {
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 100px; }
+    main .datosContacto .contacto h3 {
+      font-size: 25px; }
+    main .datosContacto .contacto .redes ul {
+      width: 40%; }
+    main .datosContacto .informacion {
+      width: 100%; }
+      main .datosContacto .informacion .formDatos .datos {
+        width: 100%; }
+        main .datosContacto .informacion .formDatos .datos input {
+          width: 100%;
+          border: 0;
+          background-color: rgba(255, 255, 255, 0.096);
+          border-bottom: black 1px solid; }
+      main .datosContacto .informacion .formDatos textarea {
+        font-size: 20px;
+        width: 70%; }
+  main .proyectos .proyecto {
+    width: 35%; } }
+
+@media (max-width: 1300px) and (max-width: 1060px) {
+  header .logo .logoIconos {
+    width: 50%; }
+  main section .instucciones {
+    width: 80%; }
+    main section .instucciones .instruccionesTexto {
+      width: 400px; }
+    main section .instucciones .instruccionesImg img {
+      width: 300px; }
+    main section .instucciones .instruccionesImg a {
+      left: 130px; }
+  main section .equipo img {
+    width: 100%; }
+  main section .equipo .informacionNosotros {
+    font-size: 18px; } }
+
+@media (max-width: 1300px) and (max-width: 855px) {
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+    align-items: center; }
+    header .logo .logoIconos {
+      width: 70%;
+      justify-content: center; }
+    header .logo .iconoUsuario {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: red;
+      display: none; }
+    header .logo .iconoCarrito {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: none; }
+  nav .container-fluid div ul.navbar-nav {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+    height: 30px;
+    overflow: hidden;
+    padding: 10px 0 0 20px;
+    transition: ease .5s; }
+  footer {
+    font-size: 20px;
+    padding-left: 30px;
+    height: 300px; }
+    footer .footerRedes ul {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      justify-content: space-between;
+      margin-right: 10px;
+      padding-left: 0; }
+      footer .footerRedes ul a img {
+        width: 30px; }
+  main section .instucciones {
+    margin: auto;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    main section .instucciones .instruccionesTexto {
+      width: 95%;
+      font-size: 20px; }
+    main section .instucciones .instruccionesImg img {
+      width: 300px; }
+    main section .instucciones .instruccionesImg a {
+      background-color: #ecc27e;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 40px;
+      bottom: -50px;
+      left: 40%; }
+    main section .instucciones .cambiarInstruccion {
+      order: 1; }
+  main section .porqueElegirnos {
+    width: 100%;
+    height: 200px;
+    overflow: scroll; }
+    main section .porqueElegirnos .porqueElegirnosImg img {
+      width: 120px;
+      margin-right: 0px; }
+    main section .porqueElegirnos .porqueElegirnosText ul li {
+      list-style: none;
+      margin-bottom: 20px;
+      margin-left: 45px;
+      width: 200px; }
+  main .datosContacto .informacion .formDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; }
+    main .datosContacto .informacion .formDatos .datos {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: auto; }
+      main .datosContacto .informacion .formDatos .datos input {
+        font-size: 25px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-color: rgba(239, 234, 234, 0.197);
+        border-bottom: black 1px solid; }
+    main .datosContacto .informacion .formDatos textarea {
+      width: 95%;
+      margin: auto; }
+    main .datosContacto .informacion .formDatos input.botonContacto {
+      position: absolute;
+      bottom: -70px;
+      right: 33%;
+      width: 33%; }
+  main h1 {
+    text-align: center;
+    margin: 0 10px; }
+  main .galeria {
+    /**filas*/
+    grid-template-rows: 400px 400px 400px 400px;
+    /**columna*/
+    grid-template-columns: 50% 25% 25%;
+    /**separar columnas
+        gap: 10px;
+        column-gap: 10px;
+        row-gap: 10px;*/
+    /**grid template areas*/
+    grid-template-areas: "img1 img2 img2" "img4 img4 img4" "img6 img6 img6" "img8 img8 img8" "img8 img8 img8" "img3 img5 img5" "img7 img9 img9"; }
+  main .proyectos .proyecto {
+    margin: 10%;
+    width: 100%; }
+  main section .equipo img {
+    width: 100%; }
+  main section .equipo .informacionNosotros {
+    font-size: 15px;
+    padding: 10px 10px; } }
+
+@media (max-width: 1300px) and (max-width: 550px) {
+  header .logo .logoIconos input {
+    font-size: 25px; }
+  header .logo img {
+    width: 20px; }
+  main section .portada h2 {
+    font-size: 30px; }
+  main section .portada a {
+    padding: 10px;
+    font-size: 20px; }
+  main main .proyectos {
+    border: 1px solid;
+    text-align: center;
+    width: 95%;
+    margin: 60px;
+    box-shadow: .5px .5px 5px; }
+    main main .proyectos .proyecto .imagen a {
+      padding: 10px;
+      position: absolute;
+      bottom: 0px;
+      background-color: #ecc27e;
+      padding: 15px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 40px;
+      color: black;
+      transition: ease 300ms;
+      position: absolute;
+      bottom: 0;
+      left: 33%;
+      width: 33%;
+      box-shadow: .5px .5px 10px; }
+  main .datosContacto .contacto .redes ul {
+    width: 80%; } }
+
+@media (max-width: 1300px) {
+  main section .equipo img {
+    width: 100%; }
+  main section .equipo .informacionNosotros {
+    font-size: 10px;
+    padding: 10px 10px; } }

@@ -1,0 +1,36 @@
+footer{
+    margin-top: 30px;
+    @include flex(flex, space-between, center);
+    height: 200px;
+    background-color: nth($colores_naranja, 2);
+    font-size: 30px;
+    padding: 0 5%;
+    .footerEnlaces{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        h3{
+
+        }
+        a{
+            text-decoration: none;
+            color: nth($colores_naranja, 4);
+        }
+    }
+    .footerRedes{
+        h3{
+
+        }
+        ul{
+            display: flex;
+            margin: auto;
+            width: 50%;
+            justify-content: space-between;
+            a{
+                img{
+                    width: 35px;
+                }
+            }
+        }
+    }
+}
