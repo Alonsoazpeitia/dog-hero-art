@@ -1,0 +1,35 @@
+//*VARIABLES
+$transiciones: all 500ms ease-out;
+
+
+//* LISTAS
+$colores_naranja:
+rgb(236, 194, 126),
+rgb(235, 172, 70),
+rgb(243, 166, 43),
+rgb(105, 79, 37);
+
+
+//*EXTEND
+%botones{
+    background-color: nth($colores_naranja, 1);
+    color: black;
+    transition: $transiciones;
+    box-shadow: .5px .5px 10px;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+%hover-botones{
+    background-color: nth($colores_naranja, 3);
+    color: white;
+    box-shadow: 2px 2px 10px;
+}
+
+//* MIXIN
+@mixin flex($flex, $justify, $alingn){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $alingn;
+}

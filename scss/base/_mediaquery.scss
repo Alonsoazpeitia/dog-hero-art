@@ -1,0 +1,940 @@
+//?++++++++++++++++MEDIA QUERY 1300PX
+@media (max-width: 1300px) {
+    //**************HEADER
+    header{
+        
+        .logo{
+            margin-right: 50px;
+            h1{
+                
+            }
+            .logoIconos{
+                width: 40%;
+                .buscador{
+                    
+                    }
+                    button{
+                        
+                    }
+                }
+                .iconoUsuario{
+                    
+                }
+                .iconoCarrito{
+                    
+                }
+                img{
+                
+                }
+            }
+        }
+        nav{
+            .container-fluid{
+                button{
+                    
+                    span{
+                    }
+                }
+                div{
+                    ul.navbar-nav{
+                    
+                        li{
+                            a{
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    //**********FOOTER
+    footer{
+        font-size: 20px;
+        .footerEnlaces{
+            h3{
+    
+            }
+            a{
+            }
+        }
+        .footerRedes{
+            h3{
+    
+            }
+            ul{
+                a{
+                    img{
+                    }
+                }
+            }
+        }
+    }
+    //************MAIN INDEX
+        main{
+            section{
+                .portada{
+                    h2{
+                    }
+                    a{
+        
+                        &:hover{
+                        }
+                    }
+                }
+                h2{
+                }
+                .instucciones{
+                    width: 95%;
+                    .instruccionesTexto{
+                        width: 600px;
+                        h3{
+        
+                        }
+                        p{
+        
+                        }
+                    }
+                    .instruccionesImg{
+                        img{
+                            width: 350px;
+                        }
+                        a{
+                            left: 130px;
+                            &:hover{
+                            }
+                        }
+                    }
+                    .cambiarInstruccion{
+        
+                    }
+                }
+                .porqueElegirnos{
+                    height: 200px;
+                    padding: 8px;
+                    .porqueElegirnosImg{
+            
+                        img{
+                            width: 120px;
+                            margin-right: 20px;
+                            &:hover{
+                            }
+                        }
+                    }
+                    .porqueElegirnosText{
+        
+                        ul{
+                            
+                            li{
+                                list-style: none;
+                                margin-bottom: 20px;
+                                margin-left: 20px;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      //!+++++++++++++++++acerca de nosotros
+     //************MAIN 
+
+        main{
+            section{
+                h2{
+        
+                }
+                .equipo{
+                    img{
+                        width: 100%;
+                    }
+                    .informacionNosotros{
+                        font-size: 23px;
+                        &:hover{
+                        }
+                        p{
+        
+                        }
+                        h2{
+        
+                        }
+                    }
+                }
+                .imgEquipo{
+                    .carousel{
+                        .carousel-inner{
+                            .carousel-item{
+                                img{
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+}
+//?++++++++++++++++MEDIA QUERY 1250PX
+@media (max-width: 1250px) {
+    //!+++++++++++++++++INDEX
+
+
+    //!+++++++++++++++++CONTACTO
+    //*++***************MAIN
+    main{
+        .datosContacto{
+            flex-direction: column;
+            width: 90%;
+            height: 100%;
+            padding-bottom: 100px;
+            .contacto{
+                h2{
+                }
+                h3{
+                    font-size: 25px;
+                    span{
+                    }
+                }
+                .redes{
+                    ul{
+                        width: 40%;
+                        a{
+                            img{
+                            }
+                        }
+                    }
+                }
+            }
+                    .informacion{
+                        width: 100%;
+                        h2{
+                        }
+                        .formDatos{
+                            .datos{
+                                width: 100%;
+                                input{
+                                    width: 100%;
+                                    border: 0;
+                                    background-color: rgba(255, 255, 255, 0.096);
+                                    border-bottom: black 1px solid;
+                                }
+                            }
+                            textarea{
+                                font-size: 20px;
+                                width: 70%;
+                            }
+                            input.botonContacto{
+                                &:hover{
+                                }
+                            }
+                        }
+            }
+        }
+        section{
+            iframe{
+            }
+        }
+    }
+      //!+++++++++++++++++PROYECTOS
+     //************MAIN 
+     main{
+        h2.h2Proyectos{
+        }
+        .proyectos{
+            .proyecto{
+                width: 35%;
+                .imagen{
+                    img{
+                    }
+                    a{
+                        &:hover{
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//?++++++++++++++++MEDIA QUERY 1060PX
+@media (max-width: 1060px) {
+     //************HEADER
+     header{
+        .logo{
+            h1{
+                
+            }
+            .logoIconos{
+                width: 50%;
+                .buscador{
+                    
+                    }
+                    button{
+                        
+                    }
+                }
+                .iconoUsuario{
+                    
+                }
+                .iconoCarrito{
+                    
+                }
+                img{
+                
+                }
+            }
+        }
+        nav{
+            .container-fluid{
+                button{
+                    
+                    span{
+                    }
+                }
+                div{
+                    ul.navbar-nav{
+                    
+                        li{
+                            a{
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    //!+++++++++++++++++INDEX
+     //************MAIN 
+    main{
+        section{
+            .portada{
+                h2{
+                }
+                a{
+                    &:hover{
+                    }
+                }
+            }
+            h2{
+            }
+            .instucciones{
+                width: 80%;
+                .instruccionesTexto{
+                    width: 400px;
+                    h3{
+                    }
+                    p{
+                    }
+                }
+                .instruccionesImg{
+                    img{
+                        width: 300px;
+                    }
+                    a{
+                        left: 130px;
+                        &:hover{
+                        }
+                    }
+                }
+                .cambiarInstruccion{
+                }
+            }
+            .porqueElegirnos{
+                .porqueElegirnosImg{
+                    img{
+                        &:hover{
+                        }
+                    }
+                }
+                .porqueElegirnosText{
+                    ul{
+                        
+                        li{
+                        }
+                    }
+                }
+            }
+        }
+    }
+      //!+++++++++++++++++acerca de nosotros
+     //************MAIN 
+
+     main{
+        section{
+            h2{
+    
+            }
+            .equipo{
+                img{
+                    width: 100%;
+                }
+                .informacionNosotros{
+                    font-size: 18px;
+                    &:hover{
+                    }
+                    p{
+    
+                    }
+                    h2{
+    
+                    }
+                }
+            }
+            .imgEquipo{
+                .carousel{
+                    .carousel-inner{
+                        .carousel-item{
+                            img{
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+}
+//?++++++++++++++++MEDIA QUERY 855PX
+@media (max-width: 855px) {
+     //************HEADER
+    header{
+        .logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 0px;
+            align-items: center;
+            h1{
+                
+            }
+            .logoIconos{
+                width: 70%;
+                justify-content: center;
+                .buscador{
+                    
+                    }
+                    button{
+                        
+                    }
+                }
+                .iconoUsuario{
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    background-color: red;
+                    display: none;
+                }
+                .iconoCarrito{
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    display: none;
+                }
+                img{
+                
+                }
+            }
+        }
+        nav{
+            .container-fluid{
+                button{
+                    
+                    span{
+                    }
+                }
+                div{
+                    ul.navbar-nav{
+                        flex-direction: column;
+                        justify-content:initial;
+                        align-items: initial;
+                        height: 30px;
+                        overflow: hidden;
+                        padding: 10px 0 0 20px;
+                        transition:ease .5s;
+                        li{
+                            a{
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    //**********FOOTER
+    footer{
+        font-size: 20px;
+        padding-left: 30px;
+        height: 300px;
+        .footerEnlaces{
+            h3{
+            }
+            a{
+            }
+        }
+        .footerRedes{
+            h3{
+            }
+            ul{
+                display: flex;
+                margin: auto;
+                width: 100%;
+                justify-content: space-between;
+                margin-right: 10px;
+                padding-left: 0;
+                a{
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+     //!+++++++++++++++++INDEX
+     //************MAIN 
+     main{
+        section{
+            .portada{
+                h2{
+                }
+                a{
+                    &:hover{
+                    }
+                }
+            }
+            h2{
+            }
+            .instucciones{
+                margin: auto;
+                margin: auto;
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .instruccionesTexto{
+                    width: 95%;
+                    font-size: 20px;
+                    h3{
+                    }
+                    p{
+                    }
+                }
+                .instruccionesImg{
+                    img{
+                        width: 300px;
+                    }
+                    a{
+                        background-color: rgb(236, 194, 126);
+                        padding: 10px;
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                        bottom: -50px;
+                        left: 40%;
+                        &:hover{
+                        }
+                    }
+                }
+                .cambiarInstruccion{
+                    order: 1;
+                }
+            }
+            .porqueElegirnos{
+                width: 100%;
+                height: 200px;
+                overflow: scroll;
+                .porqueElegirnosImg{
+                    img{
+                        width: 120px;
+                        margin-right: 0px;
+                        &:hover{
+                        }
+                    }
+                }
+                .porqueElegirnosText{
+                    ul{
+                        
+                        li{
+                            list-style: none;
+                            margin-bottom: 20px;
+                            margin-left: 45px;
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        //!+++++++++++++++++CONTACTO
+    //*++***************MAIN
+    main{
+        .datosContacto{
+            .contacto{
+                h2{
+                }
+                h3{
+                    span{
+                    }
+                }
+                .redes{
+                    ul{
+                        a{
+                            img{
+                            }
+                        }
+                    }
+                }
+            }
+                    .informacion{
+                        h2{
+                        }
+                        .formDatos{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            position: relative;
+                            .datos{
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+                                margin: auto;
+                                input{
+                                    font-size: 25px;
+                                    width: 100%;
+                                    margin-bottom: 25px;
+                                    background-color: rgba(239, 234, 234, 0.197);
+                                    border-bottom: black 1px solid;
+                                    
+                                }
+                            }
+                            textarea{
+                                width: 95%;
+                                margin: auto;
+                            }
+                            input.botonContacto{
+                                position: absolute;
+                                bottom: -70px;
+                                right: 33%;
+                                width: 33%;
+                                &:hover{
+                                }
+                            }
+                        }
+            }
+        }
+        section{
+            iframe{
+            }
+        }
+    }
+    //!+++++++++++++++++IMAGENES
+    //*++***************MAIN
+    main{
+        h1{
+            text-align: center;
+            margin: 0 10px;
+        }
+        .galeria{
+
+
+        /**filas*/
+        grid-template-rows: 400px 400px 400px 400px;
+        /**columna*/
+        grid-template-columns: 50% 25% 25%;
+        /**separar columnas
+        gap: 10px;
+        column-gap: 10px;
+        row-gap: 10px;*/
+        /**grid template areas*/
+        grid-template-areas: 
+        "img1 img2 img2"
+        "img4 img4 img4"
+        "img6 img6 img6"
+        "img8 img8 img8"
+        "img8 img8 img8"
+        "img3 img5 img5"
+        "img7 img9 img9"
+        ;
+            img{
+            }
+        }
+    }
+         //!+++++++++++++++++PROYECTOS
+     //************MAIN 
+     main{
+        h2.h2Proyectos{
+        }
+        .proyectos{
+            
+            .proyecto{
+                margin: 10%;
+                width: 100%;
+                .imagen{
+                    img{
+                    }
+                    a{
+                        &:hover{
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+              //!+++++++++++++++++acerca de nosotros
+     //************MAIN 
+
+     main{
+        section{
+            .equipo{
+                img{
+                    width: 100%;
+                }
+                .informacionNosotros{
+                    font-size: 15px;
+                    padding: 10px 10px;
+                    
+                    p{
+    
+                    }
+                    h2{
+    
+                    }
+                }
+            }
+            .imgEquipo{
+                .carousel{
+                    .carousel-inner{
+                        .carousel-item{
+                            img{
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    
+}
+//?++++++++++++++++MEDIA QUERY 550PX
+@media (max-width: 550px) {
+        //**************HEADER
+        header{
+        
+            .logo{
+                h1{
+                    
+                }
+                .logoIconos{
+                    input{
+                        font-size: 25px;
+                    }
+                    .buscador{
+                        
+                        }
+                        button{
+                            
+                        }
+                    }
+                    .iconoUsuario{
+                        
+                    }
+                    .iconoCarrito{
+                        
+                    }
+                    img{
+                        width: 20px;
+                    }
+                }
+            }
+            nav{
+                .container-fluid{
+                    button{
+                        
+                        span{
+                        }
+                    }
+                    div{
+                        ul.navbar-nav{
+                        
+                            li{
+                                a{
+                                
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+         //!+++++++++++++++++INDEX
+     //************MAIN 
+     main{
+        section{
+            .portada{
+                h2{
+                    font-size: 30px;
+                }
+                a{
+                    padding: 10px;
+                    font-size: 20px;
+                    &:hover{
+                    }
+                }
+            }
+            h2{
+            }
+            .instucciones{
+                .instruccionesTexto{
+                    h3{
+                    }
+                    p{
+                    }
+                }
+                .instruccionesImg{
+                    img{
+                    }
+                    a{
+                        &:hover{
+                        }
+                    }
+                }
+                .cambiarInstruccion{
+                }
+            }
+            .porqueElegirnos{
+                .porqueElegirnosImg{
+                    img{
+                        &:hover{
+                        }
+                    }
+                }
+                .porqueElegirnosText{
+                    ul{
+                        
+                        li{
+                        }
+                    }
+                }
+            }
+        }
+    //!+++++++++++++++++PROYECTOS
+     //************MAIN 
+        main{
+            h2.h2Proyectos{
+            }
+            .proyectos{
+                border: 1px solid ;
+                text-align: center;
+                width: 95%;
+                margin: 60px;
+                box-shadow: .5px .5px 5px;
+                .proyecto{
+                    .imagen{
+                        img{
+                        }
+                        a{
+                            padding: 10px;
+                            position:absolute;
+                            bottom: 0px;
+                            background-color: rgb(236, 194, 126);
+                            padding: 15px;
+                            font-size: 20px;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            margin-bottom: 40px;
+                            color: black;
+                            transition:ease 300ms;
+                            position: absolute;
+                            bottom: 0;
+                            left: 33%;
+                            width: 33%;
+                            box-shadow: .5px .5px 10px;
+                            &:hover{
+        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+            //!+++++++++++++++++CONTACTO
+    //*++***************MAIN
+    main{
+        .datosContacto{
+            .contacto{
+                h2{
+                }
+                h3{
+                    span{
+                    }
+                }
+                .redes{
+                    ul{
+                        width: 80%;
+                        a{
+                            img{
+                            }
+                        }
+                    }
+                }
+            }
+                    .informacion{
+                        h2{
+                        }
+                        .formDatos{
+                            .datos{
+                                input{
+                                    
+                                }
+                            }
+                            textarea{
+                            }
+                            input.botonContacto{
+                                &:hover{
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+        section{
+            iframe{
+            }
+        }
+    }
+                  //!+++++++++++++++++acerca de nosotros
+     //************MAIN 
+
+     main{
+        section{
+            .equipo{
+                img{
+                    width: 100%;
+                }
+                .informacionNosotros{
+                    font-size: 10px;
+                    padding: 10px 10px;
+                    
+                    p{
+    
+                    }
+                    h2{
+    
+                    }
+                }
+            }
+            .imgEquipo{
+                .carousel{
+                    .carousel-inner{
+                        .carousel-item{
+                            img{
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,76 @@
+//*INDEX
+header{
+    background-color: nth($colores_naranja, 1);
+    .logo{
+        @include flex(flex, space-between, center);
+        margin-right: 20px;
+        h1{
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;
+            margin-left: 10px;
+        }
+        .logoIconos{
+            @include flex(flex, space-between, center);
+            width: 35%;
+            .buscador{
+                position: relative;
+                input{
+                    font-size: 30px;
+                    background-color: rgba(255, 255, 255, 0.055);
+                    border: 0;
+                    border-bottom: 1px solid #000;
+                }
+                button{
+                    font-size: 25px;
+                    width: 33px;
+                    padding: 2px;
+                    position: absolute;
+                    border: 0;
+                    right: 5px;
+                    top: 1px;
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+            .iconoUsuario{
+                position: relative;
+                margin-left: 20px;
+            }
+            .iconoCarrito{
+                position: relative;
+                margin-left: 20px;
+            }
+            img{
+                width: 25px;
+            }
+        }
+    }
+    nav{
+        .container-fluid{
+            button{
+                margin: 5px;
+                span{
+                }
+            }
+            div{
+                ul.navbar-nav{
+                    @include flex(flex, space-evenly, center);
+                    background-color: nth($colores_naranja, 2);
+                    list-style: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    height: 100%;
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*PROYECTOS

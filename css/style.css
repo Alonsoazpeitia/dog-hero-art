@@ -62,6 +62,7 @@ header .logoIconos button{
     top: 1px;
     background-color: rgba(255, 255, 255, 0);
 }
+
 header ul.navbar-nav{
     display: flex;
     justify-content:space-evenly;
