@@ -1,9 +1,10 @@
 //*INDEX
 header{
-    background-color: nth($colores_naranja, 1);
+    
     .logo{
+        background: nth($colores_naranja, 5);
         @include flex(flex, space-between, center);
-        margin-right: 20px;
+        padding-right: 20px;
         h1{
             font-size: 50px;
             font-family: 'Dancing Script', cursive;
@@ -11,14 +12,24 @@ header{
         }
         .logoIconos{
             @include flex(flex, space-between, center);
-            width: 35%;
+            width: 55%;
             .buscador{
+                width: 80%;
                 position: relative;
+                max-width: 600px;
                 input{
+                    width: 100%;
                     font-size: 30px;
-                    background-color: rgba(255, 255, 255, 0.055);
+                    background-color: rgba(255, 255, 255, 0);
                     border: 0;
                     border-bottom: 1px solid #000;
+                    border-radius: 10px 10px 0 0;
+
+                    &:focus{
+                        background-color: nth($colores_naranja,1);
+                        border-bottom: 1px solid #f8f6f6;
+                        outline: none
+                    }
                 }
                 button{
                     font-size: 25px;
@@ -31,21 +42,12 @@ header{
                     background-color: rgba(255, 255, 255, 0);
                 }
             }
-            .iconoUsuario{
-                position: relative;
-                margin-left: 20px;
-            }
-            .iconoCarrito{
-                position: relative;
-                margin-left: 20px;
-            }
-            img{
-                width: 25px;
-            }
         }
     }
     nav{
+        
         .container-fluid{
+            background-color: nth($colores_naranja, 2);
             button{
                 margin: 5px;
                 span{
@@ -66,6 +68,16 @@ header{
                             font-size: 20px;
                             text-transform: uppercase;
                             color: black;
+                            transition: all 200ms ease;
+                            &:hover{
+                                scale: 1.01;
+                                border-bottom: 2px solid nth($colores_naranja, 4);
+                                color: nth($colores_naranja, 4);
+                            }
+                        }
+                        .selector{
+                            border-bottom: 2px solid nth($colores_naranja, 4);
+                            color: nth($colores_naranja, 4);
                         }
                     }
                 }

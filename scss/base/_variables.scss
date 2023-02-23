@@ -1,14 +1,15 @@
 //*VARIABLES
 $transiciones: all 500ms ease-out;
-
+//transition: $transiciones;
 
 //* LISTAS
 $colores_naranja:
 rgb(236, 194, 126),
 rgb(235, 172, 70),
 rgb(243, 166, 43),
-rgb(105, 79, 37);
-
+rgb(105, 79, 37),
+linear-gradient(rgb(236, 198, 138),rgb(235, 172, 70));
+//background-color: nth($colores_naranja, 1);
 
 //*EXTEND
 %botones{
@@ -21,6 +22,7 @@ rgb(105, 79, 37);
     border-radius: 5px;
     text-decoration: none;
 }
+//@extend %hover-botones;
 %hover-botones{
     background-color: nth($colores_naranja, 3);
     color: white;
@@ -33,3 +35,4 @@ rgb(105, 79, 37);
     justify-content: $justify;
     align-items: $alingn;
 }
+//@include flex(flex, center, center);
