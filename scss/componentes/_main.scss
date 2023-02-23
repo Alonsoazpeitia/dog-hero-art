@@ -38,41 +38,40 @@ main{
         .instucciones{
             margin: auto;
             width: 80%;
+            max-width: 1000px;
             @include flex(flex, space-between, center);
             .instruccionesTexto{
                 width: 600px;
                 font-size: 25px;
                 color: nth($colores_naranja, 4);
-                h3{
-
-                }
-                p{
-
-                }
             }
             .instruccionesImg{
                 position: relative;
                 img{
                     width: 400px;
+                    transition: $transiciones;
+                    &:hover{
+                        scale: 1.1;
+                    }
                 }
-                a{
+                
+            }
+            
+        }a.iniciar-compra{
                     @extend %botones;
-                    margin-bottom: 40px;
-                    position: absolute;
-                    bottom: 0;
-                    left: 150px;
-
+                    text-align: center;
+                    display: block;
+                    margin: auto;
+                    width: 200px;
+                    font-size: 20px;
+                    margin-top: 30px;
                     &:hover{
                         @extend %hover-botones;
                     }
                 }
-            }
-            .cambiarInstruccion{
-
-            }
-        }
         .porqueElegirnos{
             width: 95%;
+            max-width: 1500px;
             height: 200px;
             background-color: nth($colores_naranja, 1);
             margin: auto;
@@ -89,7 +88,7 @@ main{
                     transition: $transiciones;
 
                     &:hover{
-                        scale: 1.01;
+                        scale: 1.1;
                     }
                 }
             }
@@ -97,11 +96,11 @@ main{
 
                 ul{
                     @include flex(flex, space-between, center);
-                    
+                    padding-left: 10px;
                     li{
                         list-style: none;
                         margin-bottom: 20px;
-                        margin-left: 20px;
+                        margin-left: 15px;
                     }
                 }
             }
@@ -122,9 +121,10 @@ main{
             border: 1px solid ;
             text-align: center;
             width: 40%;
-            margin: 60px;
+            margin: 30px;
             box-shadow: .5px .5px 5px;
-            max-width: 800px;
+            max-width: 700px;
+            min-width: 350px;
             .imagen{
                 height: 400px;
                 overflow: hidden;
@@ -140,11 +140,12 @@ main{
                     bottom: 0px;
                     margin-bottom: 40px;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -30px;
                     left: 33.3%;
                     @extend %botones;
+                    padding: 10px;
                     width: 33.3%;
-                    font-size: 20px;
+                    font-size: 15px;
 
                     &:hover{
                         @extend %hover-botones;
@@ -173,11 +174,6 @@ main{
         grid-template-rows: 400px 400px 400px 400px;
         /**columna*/
         grid-template-columns: 30% 30% 40%;
-        /**separar columnas
-        gap: 10px;
-        column-gap: 10px;
-        row-gap: 10px;*/
-        /**grid template areas*/
         grid-template-areas: 
         "img1 img2 img3"
         "img4 img4 img3"
@@ -185,9 +181,23 @@ main{
         "img7 img8 img9"
         ;
         img{
-            overflow: hidden;
+            transition: all 1s ease-out;
+            overflow:hidden;
             object-fit: cover;
             height: 100%;
+            z-index: 0;
+            filter: contrast(.6);
+            &:hover{
+                width: 105%;
+                height: 105%;
+                z-index: 2;
+                margin: auto;
+                box-shadow: 10px 10px 20px;
+                border: 2px solid rgba(6, 6, 6, 0.595);
+                filter: contrast(1);
+                
+            }
+            
         }
         .img1{
             grid-area: img1;
@@ -230,9 +240,6 @@ main{
 //*ACERCA DE NOSOTROS
 main{
     section{
-        h2{
-
-        }
         .equipo{
             width: 80%;
             margin: auto;
@@ -254,18 +261,12 @@ main{
                 &:hover{
                     opacity: 100;
                 }
-                p{
-
-                }
-                h2{
-
-                }
             }
         }
         .imgEquipo{
             width: 95%;
+            max-width: 1500px;
             margin: auto;
-            height: 700px;
             overflow: hidden;
             object-fit: cover;
             .carousel{
@@ -273,6 +274,7 @@ main{
                     .carousel-item{
                         img{
                             object-fit: cover;
+                            height: 500px;
                         }
                     }
                 }
@@ -307,15 +309,16 @@ main{
                     a{
                         img{
                             width: 35px;
+                            transition: $transiciones;
+                            &:hover{
+                                scale: 1.1;
+                            }
                         }
                     }
                 }
             }
         }
                 .informacion{
-                    h2{
-
-                    }
                     .formDatos{
                         @include flex(flex, space-between, normal);
                         position: relative;
@@ -331,6 +334,11 @@ main{
                                 border: 0;
                                 background-color: rgba(255, 255, 255, 0.096);
                                 border-bottom: black 1px solid;
+                                color: nth($colores_naranja,4);
+                                &:focus{
+                                    outline: none;
+                                    border-bottom: 2px solid nth($colores_naranja,1);
+                                }
                             }
                         }
                         textarea{
@@ -338,6 +346,11 @@ main{
                             background-color: rgba(255, 255, 255, 0.205);
                             border-bottom: black 1px solid;
                             padding: 10px;
+                            color: nth($colores_naranja,4);
+                            &:focus{
+                                border: 2px solid nth($colores_naranja,1);
+                                outline: none;
+                            }
                         }
                         input.botonContacto{
                             @extend %botones;

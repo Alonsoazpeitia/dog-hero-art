@@ -28,7 +28,7 @@ body {
   100% {
     margin: 100px; } }
 
-main section .portada a, main section .instucciones .instruccionesImg a, main .proyectos .proyecto .imagen a, main .datosContacto .informacion .formDatos input.botonContacto {
+main section .portada a, main section a.iniciar-compra, main .proyectos .proyecto .imagen a, main .datosContacto .informacion .formDatos input.botonContacto {
   background-color: #ecc27e;
   color: black;
   transition: all 500ms ease-out;
@@ -38,51 +38,53 @@ main section .portada a, main section .instucciones .instruccionesImg a, main .p
   border-radius: 5px;
   text-decoration: none; }
 
-main section .portada a:hover, main section .instucciones .instruccionesImg a:hover, main .proyectos .proyecto .imagen a:hover, main .datosContacto .informacion .formDatos input.botonContacto:hover {
+main section .portada a:hover, main section a.iniciar-compra:hover, main .proyectos .proyecto .imagen a:hover, main .datosContacto .informacion .formDatos input.botonContacto:hover {
   background-color: #f3a62b;
   color: white;
   box-shadow: 2px 2px 10px; }
 
-header {
-  background-color: #ecc27e; }
-  header .logo {
+header .logo {
+  background: linear-gradient(#ecc68a, #ebac46);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px; }
+  header .logo h1 {
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 10px; }
+  header .logo .logoIconos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px; }
-    header .logo h1 {
-      font-size: 50px;
-      font-family: 'Dancing Script', cursive;
-      margin-left: 10px; }
-    header .logo .logoIconos {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 35%; }
-      header .logo .logoIconos .buscador {
-        position: relative; }
-        header .logo .logoIconos .buscador input {
-          font-size: 30px;
-          background-color: rgba(255, 255, 255, 0.055);
-          border: 0;
-          border-bottom: 1px solid #000; }
-        header .logo .logoIconos .buscador button {
-          font-size: 25px;
-          width: 33px;
-          padding: 2px;
-          position: absolute;
-          border: 0;
-          right: 5px;
-          top: 1px;
-          background-color: rgba(255, 255, 255, 0); }
-      header .logo .logoIconos .iconoUsuario {
-        position: relative;
-        margin-left: 20px; }
-      header .logo .logoIconos .iconoCarrito {
-        position: relative;
-        margin-left: 20px; }
-      header .logo .logoIconos img {
-        width: 25px; }
+    width: 55%; }
+    header .logo .logoIconos .buscador {
+      width: 80%;
+      position: relative;
+      max-width: 600px; }
+      header .logo .logoIconos .buscador input {
+        width: 100%;
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0;
+        border-bottom: 1px solid #000;
+        border-radius: 10px 10px 0 0; }
+        header .logo .logoIconos .buscador input:focus {
+          background-color: #ecc27e;
+          border-bottom: 1px solid #f8f6f6;
+          outline: none; }
+      header .logo .logoIconos .buscador button {
+        font-size: 25px;
+        width: 33px;
+        padding: 2px;
+        position: absolute;
+        border: 0;
+        right: 5px;
+        top: 1px;
+        background-color: rgba(255, 255, 255, 0); }
+
+header nav .container-fluid {
+  background-color: #ebac46; }
   header nav .container-fluid button {
     margin: 5px; }
   header nav .container-fluid div ul.navbar-nav {
@@ -99,7 +101,15 @@ header {
       text-decoration: none;
       font-size: 20px;
       text-transform: uppercase;
-      color: black; }
+      color: black;
+      transition: all 200ms ease; }
+      header nav .container-fluid div ul.navbar-nav li a:hover {
+        scale: 1.01;
+        border-bottom: 2px solid #694f25;
+        color: #694f25; }
+    header nav .container-fluid div ul.navbar-nav li .selector {
+      border-bottom: 2px solid #694f25;
+      color: #694f25; }
 
 main section .portada {
   background-image: url("../img/fondo10.png");
@@ -133,6 +143,7 @@ main section h2 {
 main section .instucciones {
   margin: auto;
   width: 80%;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -143,15 +154,22 @@ main section .instucciones {
   main section .instucciones .instruccionesImg {
     position: relative; }
     main section .instucciones .instruccionesImg img {
-      width: 400px; }
-    main section .instucciones .instruccionesImg a {
-      margin-bottom: 40px;
-      position: absolute;
-      bottom: 0;
-      left: 150px; }
+      width: 400px;
+      transition: all 500ms ease-out; }
+      main section .instucciones .instruccionesImg img:hover {
+        scale: 1.1; }
+
+main section a.iniciar-compra {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 200px;
+  font-size: 20px;
+  margin-top: 30px; }
 
 main section .porqueElegirnos {
   width: 95%;
+  max-width: 1500px;
   height: 200px;
   background-color: #ecc27e;
   margin: auto;
@@ -169,15 +187,16 @@ main section .porqueElegirnos {
       margin-right: 20px;
       transition: all 500ms ease-out; }
       main section .porqueElegirnos .porqueElegirnosImg img:hover {
-        scale: 1.01; }
+        scale: 1.1; }
   main section .porqueElegirnos .porqueElegirnosText ul {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-left: 10px; }
     main section .porqueElegirnos .porqueElegirnosText ul li {
       list-style: none;
       margin-bottom: 20px;
-      margin-left: 20px; }
+      margin-left: 15px; }
 
 main h2.h2Proyectos {
   text-align: center;
@@ -193,9 +212,10 @@ main .proyectos {
     border: 1px solid;
     text-align: center;
     width: 40%;
-    margin: 60px;
+    margin: 30px;
     box-shadow: .5px .5px 5px;
-    max-width: 800px; }
+    max-width: 700px;
+    min-width: 350px; }
     main .proyectos .proyecto .imagen {
       height: 400px;
       overflow: hidden;
@@ -210,10 +230,11 @@ main .proyectos {
         bottom: 0px;
         margin-bottom: 40px;
         position: absolute;
-        bottom: 0;
+        bottom: -30px;
         left: 33.3%;
+        padding: 10px;
         width: 33.3%;
-        font-size: 20px; }
+        font-size: 15px; }
 
 main h1 {
   text-align: center;
@@ -230,16 +251,22 @@ main .galeria {
   grid-template-rows: 400px 400px 400px 400px;
   /**columna*/
   grid-template-columns: 30% 30% 40%;
-  /**separar columnas
-        gap: 10px;
-        column-gap: 10px;
-        row-gap: 10px;*/
-  /**grid template areas*/
   grid-template-areas: "img1 img2 img3" "img4 img4 img3" "img5 img6 img6" "img7 img8 img9"; }
   main .galeria img {
+    transition: all 1s ease-out;
     overflow: hidden;
     object-fit: cover;
-    height: 100%; }
+    height: 100%;
+    z-index: 0;
+    filter: contrast(0.6); }
+    main .galeria img:hover {
+      width: 105%;
+      height: 105%;
+      z-index: 2;
+      margin: auto;
+      box-shadow: 10px 10px 20px;
+      border: 2px solid rgba(6, 6, 6, 0.595);
+      filter: contrast(1); }
   main .galeria .img1 {
     grid-area: img1;
     width: 100%; }
@@ -290,12 +317,13 @@ main section .equipo {
 
 main section .imgEquipo {
   width: 95%;
+  max-width: 1500px;
   margin: auto;
-  height: 700px;
   overflow: hidden;
   object-fit: cover; }
   main section .imgEquipo .carousel .carousel-inner .carousel-item img {
-    object-fit: cover; }
+    object-fit: cover;
+    height: 500px; }
 
 main .datosContacto {
   display: flex;
@@ -318,7 +346,10 @@ main .datosContacto {
     align-items: center;
     width: 50%; }
     main .datosContacto .contacto .redes ul a img {
-      width: 35px; }
+      width: 35px;
+      transition: all 500ms ease-out; }
+      main .datosContacto .contacto .redes ul a img:hover {
+        scale: 1.1; }
   main .datosContacto .informacion .formDatos {
     display: flex;
     justify-content: space-between;
@@ -337,12 +368,20 @@ main .datosContacto {
         width: 300px;
         border: 0;
         background-color: rgba(255, 255, 255, 0.096);
-        border-bottom: black 1px solid; }
+        border-bottom: black 1px solid;
+        color: #694f25; }
+        main .datosContacto .informacion .formDatos .datos input:focus {
+          outline: none;
+          border-bottom: 2px solid #ecc27e; }
     main .datosContacto .informacion .formDatos textarea {
       font-size: 20px;
       background-color: rgba(255, 255, 255, 0.205);
       border-bottom: black 1px solid;
-      padding: 10px; }
+      padding: 10px;
+      color: #694f25; }
+      main .datosContacto .informacion .formDatos textarea:focus {
+        border: 2px solid #ecc27e;
+        outline: none; }
     main .datosContacto .informacion .formDatos input.botonContacto {
       position: absolute;
       bottom: -85px;
@@ -361,7 +400,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 200px;
-  background-color: #ebac46;
+  background: linear-gradient(#ecc68a, #ebac46);
   font-size: 30px;
   padding: 0 5%; }
   footer .footerEnlaces {
@@ -377,11 +416,14 @@ footer {
     width: 50%;
     justify-content: space-between; }
     footer .footerRedes ul a img {
-      width: 35px; }
+      width: 35px;
+      transition: all 500ms ease-out; }
+      footer .footerRedes ul a img:hover {
+        scale: 1.1; }
 
 @media (max-width: 1300px) {
   header .logo {
-    margin-right: 50px; }
+    padding-right: 50px; }
     header .logo .logoIconos {
       width: 40%; }
   footer {
@@ -410,7 +452,7 @@ footer {
   main section .equipo .informacionNosotros {
     font-size: 23px; } }
 
-@media (max-width: 1300px) and (max-width: 1250px) {
+@media (max-width: 1250px) {
   main .datosContacto {
     flex-direction: column;
     width: 90%;
@@ -435,7 +477,7 @@ footer {
   main .proyectos .proyecto {
     width: 35%; } }
 
-@media (max-width: 1300px) and (max-width: 1060px) {
+@media (max-width: 1060px) {
   header .logo .logoIconos {
     width: 50%; }
   main section .instucciones {
@@ -451,32 +493,22 @@ footer {
   main section .equipo .informacionNosotros {
     font-size: 18px; } }
 
-@media (max-width: 1300px) and (max-width: 855px) {
+@media (max-width: 855px) {
   header .logo {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     margin-right: 0px;
-    align-items: center; }
+    padding: 0; }
     header .logo .logoIconos {
-      width: 70%;
-      justify-content: center; }
-    header .logo .iconoUsuario {
-      position: absolute;
-      left: 20px;
-      top: 20px;
-      background-color: red;
-      display: none; }
-    header .logo .iconoCarrito {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      display: none; }
-  nav .container-fluid div ul.navbar-nav {
+      width: 90%;
+      justify-content: center;
+      margin: auto; }
+  header nav .container-fluid div ul.navbar-nav {
     flex-direction: column;
     justify-content: initial;
-    align-items: initial;
-    height: 30px;
+    align-items: center;
     overflow: hidden;
     padding: 10px 0 0 20px;
     transition: ease .5s; }
@@ -486,28 +518,27 @@ footer {
     height: 300px; }
     footer .footerRedes ul {
       display: flex;
+      justify-content: space-around;
+      align-items: center;
       margin: auto;
       width: 100%;
-      justify-content: space-between;
       margin-right: 10px;
       padding-left: 0; }
       footer .footerRedes ul a img {
         width: 30px; }
   main section .instucciones {
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
     width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
+    flex-direction: column; }
     main section .instucciones .instruccionesTexto {
       width: 95%;
       font-size: 20px; }
     main section .instucciones .instruccionesImg img {
       width: 300px; }
     main section .instucciones .instruccionesImg a {
-      background-color: #ecc27e;
       padding: 10px;
       font-size: 20px;
       margin-bottom: 40px;
@@ -522,21 +553,24 @@ footer {
     main section .porqueElegirnos .porqueElegirnosImg img {
       width: 120px;
       margin-right: 0px; }
-    main section .porqueElegirnos .porqueElegirnosText ul li {
-      list-style: none;
-      margin-bottom: 20px;
-      margin-left: 45px;
-      width: 200px; }
+    main section .porqueElegirnos .porqueElegirnosText ul {
+      padding-left: 0; }
+      main section .porqueElegirnos .porqueElegirnosText ul li {
+        list-style: none;
+        margin-bottom: 20px;
+        margin-left: 35px;
+        width: 200px; }
   main .datosContacto .informacion .formDatos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: normal;
+    flex-direction: column;
     position: relative; }
     main .datosContacto .informacion .formDatos .datos {
       display: flex;
       justify-content: center;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       margin: auto; }
       main .datosContacto .informacion .formDatos .datos input {
         font-size: 25px;
@@ -560,60 +594,43 @@ footer {
     grid-template-rows: 400px 400px 400px 400px;
     /**columna*/
     grid-template-columns: 50% 25% 25%;
-    /**separar columnas
-        gap: 10px;
-        column-gap: 10px;
-        row-gap: 10px;*/
-    /**grid template areas*/
     grid-template-areas: "img1 img2 img2" "img4 img4 img4" "img6 img6 img6" "img8 img8 img8" "img8 img8 img8" "img3 img5 img5" "img7 img9 img9"; }
   main .proyectos .proyecto {
     margin: 10%;
     width: 100%; }
-  main section .equipo img {
-    width: 100%; }
-  main section .equipo .informacionNosotros {
-    font-size: 15px;
-    padding: 10px 10px; } }
+  main section .equipo {
+    width: 98%;
+    height: 500px; }
+    main section .equipo img {
+      width: 100%;
+      height: 100%; }
+    main section .equipo .informacionNosotros {
+      font-size: 20px;
+      padding: 10px 10px; } }
 
-@media (max-width: 1300px) and (max-width: 550px) {
+@media (max-width: 550px) {
   header .logo .logoIconos input {
     font-size: 25px; }
-  header .logo img {
-    width: 20px; }
   main section .portada h2 {
     font-size: 30px; }
   main section .portada a {
     padding: 10px;
     font-size: 20px; }
-  main main .proyectos {
-    border: 1px solid;
+  main section .porqueElegirnos .porqueElegirnosImg img {
+    width: 70px; }
+  main section .porqueElegirnos .porqueElegirnosText ul {
+    padding-left: 0; }
+    main section .porqueElegirnos .porqueElegirnosText ul li {
+      font-size: 12px;
+      margin: 10px; }
+  main .proyectos {
     text-align: center;
     width: 95%;
-    margin: 60px;
-    box-shadow: .5px .5px 5px; }
-    main main .proyectos .proyecto .imagen a {
-      padding: 10px;
-      position: absolute;
-      bottom: 0px;
-      background-color: #ecc27e;
-      padding: 15px;
-      font-size: 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 40px;
-      color: black;
-      transition: ease 300ms;
-      position: absolute;
-      bottom: 0;
-      left: 33%;
-      width: 33%;
-      box-shadow: .5px .5px 10px; }
+    margin: auto; }
   main .datosContacto .contacto .redes ul {
-    width: 80%; } }
-
-@media (max-width: 1300px) {
+    width: 80%; }
   main section .equipo img {
-    width: 100%; }
+    width: 160%; }
   main section .equipo .informacionNosotros {
-    font-size: 10px;
+    font-size: 17px;
     padding: 10px 10px; } }

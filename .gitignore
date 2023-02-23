@@ -1,2 +1,4 @@
-template/
+
 node_modules/
+.DS_Store/
+css/style.css
