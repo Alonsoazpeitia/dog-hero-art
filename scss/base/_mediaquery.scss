@@ -175,10 +175,20 @@
         }
     }
 }
-
+@media (max-width: 991px) {
+    .navbar-toggler{
+        position: absolute;
+        top: -55px;
+        right: 0;
+    
+    }
+}
 //?++++++++++++++++MEDIA QUERY 855PX
 @media (max-width: 855px) {
      //************HEADER
+    .navbar-toggler{
+        top: -120px;
+    }
     header{
         .logo{
             @include flex(flex, space-between, center);
