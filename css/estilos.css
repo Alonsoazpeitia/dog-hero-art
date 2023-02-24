@@ -30,7 +30,7 @@ body {
 
 .navbar-toggler {
   position: absolute;
-  top: -108px; }
+  top: -120px; }
 
 main section .portada a, main section a.iniciar-compra, main .proyectos .proyecto .imagen a, main .datosContacto .informacion .formDatos input.botonContacto {
   background-color: #ecc27e;
