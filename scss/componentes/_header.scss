@@ -17,6 +17,7 @@ header{
                 width: 80%;
                 position: relative;
                 max-width: 600px;
+                margin-bottom: 10px;
                 input{
                     width: 100%;
                     font-size: 30px;
@@ -50,8 +51,6 @@ header{
             background-color: nth($colores_naranja, 2);
             button{
                 margin: 5px;
-                span{
-                }
             }
             div{
                 ul.navbar-nav{

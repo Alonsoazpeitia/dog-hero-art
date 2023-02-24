@@ -28,6 +28,10 @@ body {
   100% {
     margin: 100px; } }
 
+.navbar-toggler {
+  position: absolute;
+  top: -108px; }
+
 main section .portada a, main section a.iniciar-compra, main .proyectos .proyecto .imagen a, main .datosContacto .informacion .formDatos input.botonContacto {
   background-color: #ecc27e;
   color: black;
@@ -61,7 +65,8 @@ header .logo {
     header .logo .logoIconos .buscador {
       width: 80%;
       position: relative;
-      max-width: 600px; }
+      max-width: 600px;
+      margin-bottom: 10px; }
       header .logo .logoIconos .buscador input {
         width: 100%;
         font-size: 30px;
