@@ -28,10 +28,6 @@ body {
   100% {
     margin: 100px; } }
 
-.navbar-toggler {
-  position: absolute;
-  top: -120px; }
-
 main section .portada a, main section a.iniciar-compra, main .proyectos .proyecto .imagen a, main .datosContacto .informacion .formDatos input.botonContacto {
   background-color: #ecc27e;
   color: black;
@@ -498,7 +494,15 @@ footer {
   main section .equipo .informacionNosotros {
     font-size: 18px; } }
 
+@media (max-width: 991px) {
+  .navbar-toggler {
+    position: absolute;
+    top: -55px;
+    right: 0; } }
+
 @media (max-width: 855px) {
+  .navbar-toggler {
+    top: -120px; }
   header .logo {
     display: flex;
     justify-content: space-between;
